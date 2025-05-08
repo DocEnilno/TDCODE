@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/index.css">
+    <title>TD-Code Home</title>
+</head>
+<body>
+    <img src="../static/pictures/TDCOicon.png" alt="TDCODEicon" height="80px">
+    <nav role="navigation">
+        <div id="menuToggle"> 
+          <!--
+          hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input name="toggle" type="checkbox" />
+          <label for="toggle">
+            <span>menu</span>
+            <!--
+            divs to be styled as a hamburger button
+            -->
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+      
+          
+          <!--
+          the menu that will slide in from the left
+            <a href="#"><li>Suggestions</li></a>
+          -->
+          <ul id="menu">
+            <a href="/downloads" id="navigation"><li>Zurück</li></a>
+          </ul>
+        </div>
+      </nav>
+    <br><br><br>
+    <center><form action="/gocengined" method = "POST">
+        <p>Das hier ist die TDCode online Commandengine, sie ist noch ein WIP<br> und hat auch nur wenige funktionen von TDCode ausführen!
+        </p>
+        <textarea rows = "20" cols = "100" name = "suggtext"></textarea><br>
+        <input type ="submit"/></center>
+    </form>
+</body>
+</html>
